@@ -7,6 +7,27 @@ Designed as a portfolio project to demonstrate clean UI, smooth interactions, an
 
 🔗 **Live Demo:** [Open the site](https://erenb1lge.github.io/tech-accessories-ecommerce/)
 
+## 📸 Screenshots
+
+### Home
+![Home](screenshots/home.png)
+
+### Products
+![Products](screenshots/shop.png)
+
+### Product Detail
+![Product Detail](screenshots/product-detail.png)
+
+### Cart
+![Cart](screenshots/cart.png)
+
+### Checkout
+![Checkout](screenshots/checkout.png)
+
+### Responsive
+![Responsive](screenshots/mobile.png)
+
+
 ## ✨ Features
 
 - Responsive layout (desktop & mobile)
