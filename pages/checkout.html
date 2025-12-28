@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout — Tech Accessories</title>
+
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages/checkout.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="../index.html" aria-label="Tech Accessories Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Tech Accessories</span>
+      </a>
+
+      <div class="nav-links" role="navigation">
+        <a href="./products.html">Shop</a>
+        <a href="../index.html#featured">Featured</a>
+        <a href="./support.html">Support</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="./cart.html" aria-label="Open cart">
+          <span class="icon" aria-hidden="true">🛒</span>
+          <span class="badge" data-cart-badge>0</span>
+        </a>
+
+        <button class="icon-btn nav-toggle" type="button"
+          data-nav-toggle
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile menu">
+      <a href="./products.html">Shop</a>
+      <a href="../index.html#featured">Featured</a>
+      <a href="./support.html">Support</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <header class="co-head">
+        <div>
+          <h1 class="co-title">Checkout</h1>
+          <p class="co-subtitle">This is a demo checkout. No real payments.</p>
+        </div>
+        <a class="btn btn-ghost" href="./cart.html">Back to cart</a>
+      </header>
+
+      <div class="co-layout">
+        <section class="co-form" aria-label="Checkout form">
+          <h2 class="panel-title">Shipping details</h2>
+
+          <form data-checkout-form novalidate>
+            <div class="grid-2">
+              <label class="field">
+                <span class="label">First name</span>
+                <input type="text" name="firstName" autocomplete="given-name" required />
+                <span class="error" data-error-for="firstName"></span>
+              </label>
+
+              <label class="field">
+                <span class="label">Last name</span>
+                <input type="text" name="lastName" autocomplete="family-name" required />
+                <span class="error" data-error-for="lastName"></span>
+              </label>
+            </div>
+
+            <label class="field">
+              <span class="label">Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+              <span class="error" data-error-for="email"></span>
+            </label>
+
+            <label class="field">
+              <span class="label">Phone</span>
+              <input type="tel" name="phone" autocomplete="tel" required />
+              <span class="error" data-error-for="phone"></span>
+            </label>
+
+            <label class="field">
+              <span class="label">Address</span>
+              <input type="text" name="address" autocomplete="street-address" required />
+              <span class="error" data-error-for="address"></span>
+            </label>
+
+            <div class="grid-3">
+              <label class="field">
+                <span class="label">City</span>
+                <input type="text" name="city" autocomplete="address-level2" required />
+                <span class="error" data-error-for="city"></span>
+              </label>
+
+              <label class="field">
+                <span class="label">Postal code</span>
+                <input type="text" name="postal" autocomplete="postal-code" required />
+                <span class="error" data-error-for="postal"></span>
+              </label>
+
+              <label class="field">
+                <span class="label">Country</span>
+                <input type="text" name="country" autocomplete="country-name" required value="Bulgaria" />
+                <span class="error" data-error-for="country"></span>
+              </label>
+            </div>
+
+            <div class="panel-divider"></div>
+
+            <h2 class="panel-title">Payment (demo)</h2>
+
+            <label class="field">
+              <span class="label">Card number</span>
+              <input type="text" name="cardNumber" inputmode="numeric" placeholder="4242 4242 4242 4242" required />
+              <span class="error" data-error-for="cardNumber"></span>
+            </label>
+
+            <div class="grid-3">
+              <label class="field">
+                <span class="label">Expiry</span>
+                <input type="text" name="cardExpiry" placeholder="MM/YY" required />
+                <span class="error" data-error-for="cardExpiry"></span>
+              </label>
+
+              <label class="field">
+                <span class="label">CVC</span>
+                <input type="text" name="cardCvc" inputmode="numeric" placeholder="123" required />
+                <span class="error" data-error-for="cardCvc"></span>
+              </label>
+
+              <label class="field">
+                <span class="label">Name on card</span>
+                <input type="text" name="cardName" required />
+                <span class="error" data-error-for="cardName"></span>
+              </label>
+            </div>
+
+            <button class="btn btn-solid submit" type="submit">
+              Place order
+            </button>
+          </form>
+        </section>
+
+        <aside class="co-summary" aria-label="Order summary">
+          <h2 class="panel-title">Order summary</h2>
+
+          <div class="mini-list" data-mini-list></div>
+
+          <div class="panel-divider"></div>
+
+          <div class="sum-row">
+            <span class="muted">Subtotal</span>
+            <span data-subtotal>$0</span>
+          </div>
+          <div class="sum-row">
+            <span class="muted">Shipping</span>
+            <span data-shipping>$0</span>
+          </div>
+          <div class="sum-row">
+            <span class="muted">Tax</span>
+            <span data-tax>$0</span>
+          </div>
+
+          <div class="panel-divider"></div>
+
+          <div class="sum-row total">
+            <span>Total</span>
+            <span data-total>$0</span>
+          </div>
+
+          <p class="muted fine">
+            By placing this order, you agree to this demo’s terms (just kidding).
+          </p>
+        </aside>
+      </div>
+
+      <section class="co-empty" data-empty hidden>
+        <h1 class="empty-title">Your cart is empty</h1>
+        <p class="empty-text">Add items before checking out.</p>
+        <a class="btn btn-primary" href="./products.html">Go to shop</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">Tech Accessories</p>
+        <p class="footer-muted">A minimalist e-commerce demo built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./products.html">Shop</a>
+        <a href="./cart.html">Cart</a>
+        <a href="./support.html">Support</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/app.js"></script>
+  <script type="module" src="../js/checkout.js"></script>
+</body>
+</html>

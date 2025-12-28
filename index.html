@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech Accessories</title>
+
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="./index.html" aria-label="Tech Accessories Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Tech Accessories</span>
+      </a>
+
+      <div class="nav-links" role="navigation">
+        <a href="./pages/products.html">Shop</a>
+        <a href="#featured">Featured</a>
+        <a href="./pages/support.html">Support</a>
+        <a href="./pages/contact.html">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="./pages/cart.html" aria-label="Open cart">
+          <span class="icon" aria-hidden="true">🛒</span>
+          <span class="badge" data-cart-badge>0</span>
+        </a>
+
+        <button class="icon-btn nav-toggle" type="button"
+          data-nav-toggle
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile menu">
+      <a href="./pages/products.html">Shop</a>
+      <a href="#featured">Featured</a>
+      <a href="./pages/support.html">Support</a>
+      <a href="./pages/contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Minimal. Modern. Premium.</p>
+          <h1>Accessories that feel effortless.</h1>
+          <p class="lead">
+            Curated tech essentials designed to look good, work better, and stay out of your way.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="./pages/products.html">Shop now</a>
+            <a class="btn btn-ghost" href="#featured">Explore featured</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Store highlights">
+            <div class="stat">
+              <div class="stat-value">2Y</div>
+              <div class="stat-label">Warranty</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">24H</div>
+              <div class="stat-label">Dispatch</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">4.9</div>
+              <div class="stat-label">Avg rating</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-label="Hero product image">
+          <a class="hero-card hero-card-link" href="./pages/product.html?id=p001" aria-label="Open Aura Headphones">
+            <div class="hero-image" role="img" aria-label="Aura Headphones product render" data-hero-stage>
+              <img data-hero-back src="./assets/products/headphones1.png" alt="" aria-hidden="true" />
+              <img data-hero-front src="./assets/products/headphones2.png" alt="Aura Headphones" />
+            </div>
+
+            <div class="hero-card-meta">
+              <div>
+                <p class="meta-title">Aura Headphones</p>
+                <p class="meta-subtitle">Comfort-first sound</p>
+              </div>
+              <p class="meta-price">$149</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured picks</h2>
+          <p>Handpicked accessories with clean design and solid performance.</p>
+        </div>
+
+        <div class="grid grid-3 featured-grid">
+          <a class="featured-card" href="./pages/products.html" aria-label="Browse Minimal Desk Lamp">
+            <div class="featured-image">
+              <img src="./assets/products/lamp.png" alt="Minimal Desk Lamp" loading="lazy" />
+            </div>
+            <div class="featured-meta">
+              <p class="featured-title">Minimal Desk Lamp</p>
+              <p class="featured-subtitle">Warm focused lighting</p>
+            </div>
+          </a>
+
+          <a class="featured-card" href="./pages/products.html" aria-label="Browse Wireless Charging Pad">
+            <div class="featured-image">
+              <img src="./assets/products/charger.png" alt="Wireless Charging Pad" loading="lazy" />
+            </div>
+            <div class="featured-meta">
+              <p class="featured-title">Wireless Charging Pad</p>
+              <p class="featured-subtitle">Fast &amp; cable-free</p>
+            </div>
+          </a>
+
+          <a class="featured-card" href="./pages/products.html" aria-label="Browse Aluminum Laptop Stand">
+            <div class="featured-image">
+              <img src="./assets/products/stand.png" alt="Aluminum Laptop Stand" loading="lazy" />
+            </div>
+            <div class="featured-meta">
+              <p class="featured-title">Aluminum Laptop Stand</p>
+              <p class="featured-subtitle">Ergonomic elevation</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">Tech Accessories</p>
+        <p class="footer-muted">A minimalist e-commerce demo built with HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="./pages/products.html">Shop</a>
+        <a href="./pages/cart.html">Cart</a>
+        <a href="./pages/support.html">Support</a>
+        <a href="./pages/contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

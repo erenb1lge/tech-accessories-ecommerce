@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product — Tech Accessories</title>
+
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages/product.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="../index.html" aria-label="Tech Accessories Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Tech Accessories</span>
+      </a>
+
+      <div class="nav-links" role="navigation">
+        <a href="./products.html">Shop</a>
+        <a href="../index.html#featured">Featured</a>
+        <a href="./support.html">Support</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="./cart.html" aria-label="Open cart">
+          <span class="icon" aria-hidden="true">🛒</span>
+          <span class="badge" data-cart-badge>0</span>
+        </a>
+
+        <button class="icon-btn nav-toggle" type="button"
+          data-nav-toggle
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile menu">
+      <a href="./products.html">Shop</a>
+      <a href="../index.html#featured">Featured</a>
+      <a href="./support.html">Support</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <a class="back-link" href="./products.html">← Back to shop</a>
+
+      <section class="product" data-product hidden>
+        <div class="product-grid">
+          <div class="gallery">
+            <div class="hero-media" aria-hidden="true"></div>
+            <div class="thumbs product-thumbs">
+              <button class="thumb is-active" type="button" data-thumb="0" aria-label="Variant 1"></button>
+              <button class="thumb" type="button" data-thumb="1" aria-label="Variant 2"></button>
+              <button class="thumb" type="button" data-thumb="2" aria-label="Variant 3"></button>
+            </div>
+          </div>
+
+          <div class="details">
+            <h1 class="title" data-name>—</h1>
+            <p class="subtitle" data-category>—</p>
+
+            <div class="meta-row">
+              <p class="price" data-price>$0</p>
+              <p class="rating" data-rating>0.0 ★</p>
+            </div>
+
+            <p class="description" data-description>—</p>
+
+            <div class="actions">
+              <div class="qty" aria-label="Quantity selector">
+                <button class="qty-btn" type="button" data-qty-minus aria-label="Decrease quantity">−</button>
+                <input class="qty-input" type="number" min="1" value="1" data-qty-input aria-label="Quantity" />
+                <button class="qty-btn" type="button" data-qty-plus aria-label="Increase quantity">+</button>
+              </div>
+
+              <button class="btn btn-solid" type="button" data-add-to-cart>Add to cart</button>
+            </div>
+
+            <div class="note">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Demo product details. Images are placeholders.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="not-found" data-not-found hidden>
+        <h1 class="nf-title">Product not found</h1>
+        <p class="nf-text">Check the link or go back to the shop.</p>
+        <a class="btn btn-primary" href="./products.html">Go to shop</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">Tech Accessories</p>
+        <p class="footer-muted">A minimalist e-commerce demo built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./products.html">Shop</a>
+        <a href="./cart.html">Cart</a>
+        <a href="./support.html">Support</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/app.js"></script>
+  <script type="module" src="../js/product.js"></script>
+</body>
+</html>

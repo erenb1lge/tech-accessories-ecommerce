@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop — Tech Accessories</title>
+
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages/products.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="../index.html" aria-label="Tech Accessories Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Tech Accessories</span>
+      </a>
+
+      <div class="nav-links" role="navigation">
+        <a href="./products.html" aria-current="page">Shop</a>
+        <a href="../index.html#featured">Featured</a>
+        <a href="./support.html">Support</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="./cart.html" aria-label="Open cart">
+          <span class="icon" aria-hidden="true">🛒</span>
+          <span class="badge" data-cart-badge>0</span>
+        </a>
+
+        <button class="icon-btn nav-toggle" type="button"
+          data-nav-toggle
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile menu">
+      <a href="./products.html">Shop</a>
+      <a href="../index.html#featured">Featured</a>
+      <a href="./support.html">Support</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <header class="page-head">
+        <div>
+          <h1 class="page-title">Shop</h1>
+          <p class="page-subtitle">Minimal accessories for a clean desk setup.</p>
+        </div>
+
+        <div class="controls" aria-label="Search and sort products">
+          <label class="search" aria-label="Search products">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input type="search" placeholder="Search products..." data-search />
+          </label>
+
+          <label class="select" aria-label="Sort products">
+            <select data-sort>
+              <option value="featured">Sort: Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating-desc">Rating: High to Low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </label>
+        </div>
+      </header>
+
+      <section class="products">
+        <div class="products-grid" data-products-grid></div>
+
+        <div class="empty" data-empty hidden>
+          <p class="empty-title">No results</p>
+          <p class="empty-text">Try a different search term.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">Tech Accessories</p>
+        <p class="footer-muted">A minimalist e-commerce demo built with HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="./products.html">Shop</a>
+        <a href="./cart.html">Cart</a>
+        <a href="./support.html">Support</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/app.js"></script>
+  <script type="module" src="../js/products.js"></script>
+</body>
+</html>

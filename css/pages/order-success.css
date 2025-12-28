@@ -1,0 +1,56 @@
+/* order-success.css */
+
+.success {
+    max-width: 720px;
+    margin-inline: auto;
+    text-align: center;
+    padding: 12px 0 26px;
+  }
+  
+  .check {
+    width: 56px;
+    height: 56px;
+    border-radius: 999px;
+    margin: 0 auto 12px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--line);
+    background: rgba(11, 15, 20, 0.06);
+    font-size: 24px;
+    font-weight: 900;
+  }
+  
+  .title {
+    margin: 0;
+    letter-spacing: -0.03em;
+  }
+  
+  .card {
+    margin: 18px auto 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(11, 15, 20, 0.06);
+    padding: 14px;
+    text-align: left;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+  }
+  
+  .row + .row {
+    border-top: 1px solid var(--line);
+  }
+  
+  .actions {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  

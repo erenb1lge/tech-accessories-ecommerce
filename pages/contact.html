@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Tech Accessories</title>
+
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages/contact.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="../index.html" aria-label="Tech Accessories Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Tech Accessories</span>
+      </a>
+
+      <div class="nav-links" role="navigation">
+        <a href="./products.html">Shop</a>
+        <a href="../index.html#featured">Featured</a>
+        <a href="./support.html">Support</a>
+        <a href="./contact.html" aria-current="page">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="./cart.html" aria-label="Open cart">
+          <span class="icon" aria-hidden="true">🛒</span>
+          <span class="badge" data-cart-badge>0</span>
+        </a>
+
+        <button class="icon-btn nav-toggle" type="button"
+          data-nav-toggle
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile menu">
+      <a href="./products.html">Shop</a>
+      <a href="../index.html#featured">Featured</a>
+      <a href="./support.html">Support</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <header class="contact-head">
+        <h1 class="contact-title">Contact</h1>
+        <p class="contact-subtitle">
+          This project is a portfolio demo. The form below is a UI example and does not send messages.
+        </p>
+      </header>
+
+      <section class="contact-grid" aria-label="Contact content">
+        <article class="contact-card" aria-label="Project details">
+          <h2 class="card-title">Project details</h2>
+
+          <p class="card-text">
+            Built with HTML, CSS, and Vanilla JavaScript. Focused on clean UX, responsiveness, and realistic e-commerce flows.
+          </p>
+
+          <div class="card-divider" aria-hidden="true"></div>
+
+          <dl class="meta">
+            <div class="meta-row">
+              <dt>Response time</dt>
+              <dd>Demo UI</dd>
+            </div>
+            <div class="meta-row">
+              <dt>Support hours</dt>
+              <dd>Always</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="contact-card" aria-label="Send a message">
+          <h2 class="card-title">Send a message</h2>
+
+          <form class="form" autocomplete="on">
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+
+            <label class="field">
+              <span>Topic</span>
+              <select name="topic">
+                <option value="" selected>Select a topic</option>
+                <option>Product question</option>
+                <option>Cart / Checkout</option>
+                <option>Returns / Warranty</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label class="field field-span">
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Write your message..."></textarea>
+            </label>
+
+            <div class="actions">
+              <button class="btn btn-solid" type="button" id="contactSendBtn">Send (demo)</button>
+              <p class="hint">Tip: In a production build, this form would POST to a backend or send via a service.</p>
+            </div>
+          </form>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">Tech Accessories</p>
+        <p class="footer-muted">A minimalist e-commerce demo built with HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="./products.html">Shop</a>
+        <a href="./cart.html">Cart</a>
+        <a href="./support.html">Support</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/app.js"></script>
+  <script>
+    document.addEventListener("click", (e) => {
+      if (e.target && e.target.id === "contactSendBtn") {
+        e.preventDefault();
+        alert("Demo form — no message is sent.");
+      }
+    });
+  </script>
+</body>
+</html>

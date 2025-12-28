@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — Tech Accessories</title>
+
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="../index.html" aria-label="Tech Accessories Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Tech Accessories</span>
+      </a>
+
+      <div class="nav-links" role="navigation">
+        <a href="./products.html">Shop</a>
+        <a href="../index.html#featured">Featured</a>
+        <a href="./support.html" aria-current="page">Support</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-btn" href="./cart.html" aria-label="Open cart">
+          <span class="icon" aria-hidden="true">🛒</span>
+          <span class="badge" data-cart-badge>0</span>
+        </a>
+
+        <button class="icon-btn nav-toggle" type="button"
+          data-nav-toggle
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav">
+          <span class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-nav" class="mobile-nav" data-mobile-nav aria-label="Mobile menu">
+      <a href="./products.html">Shop</a>
+      <a href="../index.html#featured">Featured</a>
+      <a href="./support.html">Support</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section support-hero">
+      <div class="section-head">
+        <h2>Support</h2>
+        <p>
+          This is a portfolio demo e-commerce experience. No real payments or deliveries are processed.
+        </p>
+      </div>
+
+      <div class="support-grid">
+        <article class="support-card">
+          <h3>Orders & Shipping</h3>
+          <p>
+            The checkout flow is simulated to demonstrate a realistic e-commerce experience.
+            Shipping prices and timelines are shown for UX only.
+          </p>
+          <ul class="support-list">
+            <li>Add items to cart and proceed to checkout</li>
+            <li>Shipping is calculated as a demo rule</li>
+            <li>No real order fulfillment</li>
+          </ul>
+        </article>
+
+        <article class="support-card">
+          <h3>Returns & Refunds</h3>
+          <p>
+            Returns are described as part of the product support UX. This project does not charge
+            any payment method, so refunds are not applicable.
+          </p>
+          <ul class="support-list">
+            <li>Clear return expectations</li>
+            <li>Friendly, simple policy language</li>
+            <li>Demo-only interactions</li>
+          </ul>
+        </article>
+
+        <article class="support-card">
+          <h3>Warranty</h3>
+          <p>
+            Warranty text exists to show how product support information can be structured cleanly
+            in a minimal UI.
+          </p>
+          <ul class="support-list">
+            <li>2-year demo warranty</li>
+            <li>Care guidelines and support tone</li>
+            <li>Designed for clarity</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>FAQ</h2>
+        <p>Short answers to the most common questions.</p>
+      </div>
+
+      <div class="faq">
+        <details class="faq-item" open>
+          <summary>Is this a real store?</summary>
+          <p>
+            No. This project is a front-end portfolio demo built with HTML, CSS, and JavaScript.
+            It focuses on UI quality, UX clarity, and realistic e-commerce flows.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do you process payments?</summary>
+          <p>
+            No. There are no real payments. Checkout is simulated to demonstrate forms, validation,
+            and order confirmation UI.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I add a real backend later?</summary>
+          <p>
+            Yes. The structure is designed so it can be connected to a backend (products API, cart,
+            orders, and authentication) with minimal refactoring.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How can I contact support?</summary>
+          <p>
+            Use the Contact page in this demo to see a clean UI layout for a contact form.
+          </p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">Tech Accessories</p>
+        <p class="footer-muted">A minimalist e-commerce demo built with HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="./products.html">Shop</a>
+        <a href="./cart.html">Cart</a>
+        <a href="./support.html">Support</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/app.js"></script>
+</body>
+</html>
