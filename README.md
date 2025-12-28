@@ -5,6 +5,8 @@ Designed as a portfolio project to demonstrate clean UI, smooth interactions, an
 
 ---
 
+🔗 **Live Demo:** [Open the site](https://erenb1lge.github.io/tech-accessories-ecommerce/)
+
 ## ✨ Features
 
 - Responsive layout (desktop & mobile)
